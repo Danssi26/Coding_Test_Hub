@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT BOOK_ID, 
+       DATE_FORMAT(PUBLISHED_DATE, '%Y-%m-%d') AS PUBLISHED_DATE -- 날짜를 지정한 형식으로 출력
+FROM BOOK
+
+WHERE CATEGORY = '인문' AND
+      YEAR(PUBLISHED_DATE) = 2021;
+
