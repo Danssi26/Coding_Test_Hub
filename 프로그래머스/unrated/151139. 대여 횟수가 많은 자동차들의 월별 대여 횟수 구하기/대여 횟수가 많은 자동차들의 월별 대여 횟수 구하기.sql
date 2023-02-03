@@ -12,5 +12,4 @@ WHERE mon_rec.Count >= 5
       AND START_DATE BETWEEN '2022-08-01' AND '2022-10-31'
  
 GROUP BY MONTH(car_his.START_DATE), car_his.CAR_ID
-
 ORDER BY MONTH(car_his.START_DATE) ASC, car_his.CAR_ID DESC
