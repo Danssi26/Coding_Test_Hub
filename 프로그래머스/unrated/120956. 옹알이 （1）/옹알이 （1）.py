@@ -14,7 +14,7 @@ def solution(babbling):
     answer = 0
 
     for word in babbling:
-        if can_make_word(word, possible_sounds):  # Check if the word can be made using the sounds
+        if can_make_word(word, possible_sounds): 
             answer += 1
 
     return answer
